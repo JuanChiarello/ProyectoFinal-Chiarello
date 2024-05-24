@@ -1,0 +1,39 @@
+/* NavBar.css */
+/* * {
+    background-color: antiquewhite;
+} */
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.NavBar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.NavBar h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.Option {
+    padding: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.Option:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.ActiveOption {
+    background-color: #777;
+    border-radius: 5px;
+}

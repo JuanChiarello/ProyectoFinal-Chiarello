@@ -1,27 +1,44 @@
 import './ItemDetailContainer.css'
 import { useState, useEffect } from "react"
-import { getProductById } from "../../asyncMock"
-import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
+import { getItemFromCategory } from '../../firebase/db';
+import ItemDetail from '../ItemDetail/ItemDetail'
 
-const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null)
+function ItemDetailContainer() {
+    const [items, setItems] = useState([]);
+    const { ItemId } = useParams();
 
     useEffect(() => {
-        getProductById('1')
-             .then(response => {
-                setProduct(response)
-             })
-             .catch(error => {
-                console.error(error)
-             })
-    }, [])
+        const getAndSetItems = async () => {
+            const products = await getItemFromCategory(ItemId)
+            setItems(products)
+        }
 
-    return(
-        <div className="ItemDetailContainer">
-            <ItemDetail {...product} />
+        getAndSetItems()
+    }, [ItemId])
+
+    return (
+        <div>
+            <div>
+                <h1 className='mainTitle'>Nueva Tecnología</h1>
+            </div>
+            <div>
+                {items.map(item => (
+                    <ItemDetail
+                        key={item.id}
+                        id={item.id}
+                        name={item.name}
+                        img={item.img}
+                        category={item.category}
+                        description={item.description}
+                        price={item.price}
+                        stock={item.stock}
+                    />
+                ))}
+            </div>
         </div>
     )
-}
 
-export default ItemDetailContainer
+};
+
+export default ItemDetailContainer;

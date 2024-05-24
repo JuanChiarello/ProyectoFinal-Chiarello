@@ -1,0 +1,180 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.0.2",
+  "deps": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "vite": "^5.2.11",
+    "nx": "19.0.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "ecommerce": [
+        {
+          "file": ".gitignore",
+          "hash": "12448274494031167600"
+        },
+        {
+          "file": "README.md",
+          "hash": "17524295600495787358"
+        },
+        {
+          "file": "nx.json",
+          "hash": "16826888931694344135"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "598408651335611054"
+        },
+        {
+          "file": "package.json",
+          "hash": "11888970673455811452",
+          "deps": [
+            "npm:@testing-library/jest-dom",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom",
+            "npm:react-scripts",
+            "npm:web-vitals",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "2949791817221603359"
+        },
+        {
+          "file": "public/index.html",
+          "hash": "13308863839730475495"
+        },
+        {
+          "file": "public/logo192.png",
+          "hash": "7585273181698778288"
+        },
+        {
+          "file": "public/logo512.png",
+          "hash": "9339365414554387981"
+        },
+        {
+          "file": "public/manifest.json",
+          "hash": "1447645250373428393"
+        },
+        {
+          "file": "public/robots.txt",
+          "hash": "2790380794362165217"
+        },
+        {
+          "file": "src/App.css",
+          "hash": "3472201094699472689"
+        },
+        {
+          "file": "src/App.js",
+          "hash": "15823066825382316000"
+        },
+        {
+          "file": "src/App.test.js",
+          "hash": "14776661775854159295"
+        },
+        {
+          "file": "src/asyncMock.js",
+          "hash": "45882065958454175"
+        },
+        {
+          "file": "src/components/CartWidget/CartWidget.js",
+          "hash": "17842793153304797499"
+        },
+        {
+          "file": "src/components/CartWidget/assets/cart.jpg",
+          "hash": "15390569348018062249"
+        },
+        {
+          "file": "src/components/Item/Item.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/components/Item/Item.js",
+          "hash": "3574069073548034928"
+        },
+        {
+          "file": "src/components/ItemCount/ItemCount.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/components/ItemCount/ItemCount.js",
+          "hash": "14298366670324477960"
+        },
+        {
+          "file": "src/components/ItemDetail/ItemDetail.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/components/ItemDetail/ItemDetail.js",
+          "hash": "10906758894381452178"
+        },
+        {
+          "file": "src/components/ItemDetailContainer/ItemDetailContainer.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/components/ItemDetailContainer/ItemDetailContainer.js",
+          "hash": "14483922155581321648"
+        },
+        {
+          "file": "src/components/ItemList/ItemList.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/components/ItemList/ItemList.js",
+          "hash": "9571402874930430516"
+        },
+        {
+          "file": "src/components/ItemListContainer/ItemListContainer.js",
+          "hash": "13003604684955350078"
+        },
+        {
+          "file": "src/components/NavBar/NavBar.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/components/NavBar/NavBar.js",
+          "hash": "17054821412041779023"
+        },
+        {
+          "file": "src/context/CartContext.js",
+          "hash": "14367880216133761877"
+        },
+        {
+          "file": "src/index.css",
+          "hash": "14056909652331273425"
+        },
+        {
+          "file": "src/index.js",
+          "hash": "2247195792079615155"
+        },
+        {
+          "file": "src/logo.svg",
+          "hash": "5137778160416929466"
+        },
+        {
+          "file": "src/reportWebVitals.js",
+          "hash": "8937667725995285050"
+        },
+        {
+          "file": "src/setupTests.js",
+          "hash": "16903885983588411080"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
